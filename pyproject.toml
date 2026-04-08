@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "online-shopper-utils"
+version = "0.1.0"
+description = "Reusable utility functions for preprocessing, class balance analysis, model evaluation, and feature-importance visualization."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Unlicense" }
+
+authors = [
+  { name = "Dominique Chen" },
+  { name = "Paridhi Bansal" },
+  { name = "Nizel Abalos" }
+  { name = "Ja Kaewwetchawong" }
+]
+
+dependencies = [
+  "pandas",
+  "matplotlib",
+  "scikit-learn"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
