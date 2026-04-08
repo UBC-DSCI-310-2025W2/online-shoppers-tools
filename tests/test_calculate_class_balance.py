@@ -2,8 +2,7 @@ import pandas as pd
 import pytest
 from pandas.testing import assert_frame_equal
 
-from src.calculate_class_balance import calculate_class_balance
-
+from online_shoppers_tools.calculate_class_balance import calculate_class_balance
 
 # -------------------------
 # Simple cases

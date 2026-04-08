@@ -3,7 +3,7 @@ import pytest
 from sklearn.datasets import make_classification
 from sklearn.ensemble import RandomForestClassifier
 
-from src.evaluate_model import evaluate_model
+from online_shoppers_tools.evaluate_model import evaluate_model
 
 # -------------------------
 # Simple cases

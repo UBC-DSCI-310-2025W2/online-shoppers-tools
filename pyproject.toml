@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
 name = "online-shopper-utils"
@@ -13,8 +13,8 @@ license = { text = "Unlicense" }
 authors = [
   { name = "Dominique Chen" },
   { name = "Paridhi Bansal" },
-  { name = "Nizel Abalos" }
-  { name = "Ja Kaewwetchawong" }
+  { name = "Nizel Abalos" },
+  { name = "Ja Kaewwetchawong"}
 ]
 
 dependencies = [
@@ -23,8 +23,17 @@ dependencies = [
   "scikit-learn"
 ]
 
-[tool.setuptools]
-package-dir = {"" = "src"}
+[tool.hatch.build.targets.wheel]
+packages = ["src/online_shoppers_tools"]
 
-[tool.setuptools.packages.find]
-where = ["src"]
+[tool.hatch.envs.default]
+python = "3.10"
+
+[tool.hatch.envs.test]
+python = "3.10"
+dependencies = [
+  "pytest"
+]
+
+[tool.hatch.envs.test.scripts]
+run = "pytest"
