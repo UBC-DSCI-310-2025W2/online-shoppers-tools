@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: online-shopper-utils
+Version: 0.1.0
+Summary: Reusable utility functions for preprocessing, class balance analysis, model evaluation, and feature-importance visualization.
+Author: Dominique Chen, Paridhi Bansal, Nizel Abalos, Ja Kaewwetchawong
+License: Unlicense
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn

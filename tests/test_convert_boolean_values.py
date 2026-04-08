@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from src.convert_boolean_values import convert_boolean_columns
+from online_shoppers_tools.convert_boolean_values import convert_boolean_columns
 
 
 # -------------------------

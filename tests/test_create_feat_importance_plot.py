@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from src.create_feat_importance_plot import create_feat_importance_plot
+from online_shoppers_tools.create_feat_importance_plot import create_feat_importance_plot
 
 
 # -------------------------
