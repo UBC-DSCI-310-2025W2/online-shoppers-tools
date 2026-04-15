@@ -24,6 +24,7 @@ These utilities were originally developed as part of an analysis pipeline and ha
 online-shoppers-tools/
 ├── src/
 │   └── online_shoppers_tools/
+│       ├── __init__.py
 │       ├── calculate_class_balance.py
 │       ├── convert_boolean_values.py
 │       ├── create_feat_importance_plot.py
